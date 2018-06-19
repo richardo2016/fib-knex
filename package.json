@@ -1,0 +1,40 @@
+{
+  "name": "fib-knex",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "@types/index.d.ts",
+  "scripts": {
+    "build": "fib-typify src -o lib",
+    "ci": "fibjs test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richardo2016/fib-knex.git"
+  },
+  "author": "richardo2016 <richardo2016@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/richardo2016/fib-knex/issues"
+  },
+  "homepage": "https://github.com/richardo2016/fib-knex#readme",
+  "devDependencies": {
+    "@fibjs/ci": "^2.1.0",
+    "@types/fibjs": "github:fibjs/fib-types#v1.0.7",
+    "fib-typify": "^0.2.0"
+  },
+  "ci": {
+    "type": "travis",
+    "version": [
+      "0.21.0",
+      "0.22.0",
+      "0.23.0",
+      "0.24.0",
+      "0.25.0"
+    ]
+  },
+  "dependencies": {
+    "knex": "^0.14.6",
+    "uuid": "^3.2.1"
+  }
+}
